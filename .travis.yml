@@ -5,7 +5,7 @@ language: c
 
 branches:
   only:
-    - dz_1
+    - margot
 
 os: linux
 

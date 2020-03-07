@@ -29,6 +29,6 @@ script:
   - cd build
   - cmake ../.
   - make
-  - valgrind --tool=memcheck --leak-check=full ./dz1 --test
+  - valgrind --tool=memcheck --leak-check=full ./dz1
   - cppcheck --enable=all --std=c99 --check-config --suppress=missingIncludeSystem -I ../includes/ ../src/
-  - ./dz1 --test
+  - ./dz1

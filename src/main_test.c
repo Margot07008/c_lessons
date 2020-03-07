@@ -17,43 +17,10 @@
 
 #include "../includes/ft_rome.h"
 
-int main(int argc, char *argv[])
+int main()
 {
-
-	char *str;
-	int len = 0;
-
-	if (argc > 1 && strcmp(argv[1], "--test") == 0)
-		test();
-	else
-	{
-		str = ft_main(0, &len, 0);
-		printf("len= %d - %s\n", len, str);
-		if (strcmp(str, "WRONG_NUMBER") && strcmp(str, "MEM_ALLOC_ERR"))
-		    free(str);
-	}
+	test();
 	return (0);
 }
 
-char* ft_main(int need_test, int (*len), float test_val)
-{
-	char *str;
-	float num = 0;
 
-	if (!need_test) {
-		printf("Enter number:");
-		scanf("%f", &num);
-	}
-	else {
-		(*len) = 0;
-		num = test_val;
-	}
-	if (!check_num(num)) {
-		return("WRONG_NUMBER");
-	}
-	count_len((int)num, len);
-	if (!(str = convert_into_rum((int)num, *len))) {
-		return("MEM_ALLOC_ERR");
-	}
-	return (str);
-}

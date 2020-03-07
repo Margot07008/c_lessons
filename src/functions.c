@@ -3,6 +3,29 @@
 //
 #include "../includes/ft_rome.h"
 
+char* ft_main(int need_test, int (*len), float test_val)
+{
+    char *str;
+    float num = 0;
+
+    if (!need_test) {
+        printf("Enter number:");
+        scanf("%f", &num);
+    }
+    else {
+        (*len) = 0;
+        num = test_val;
+    }
+    if (!check_num(num)) {
+        return("WRONG_NUMBER");
+    }
+    count_len((int)num, len);
+    if (!(str = convert_into_rum((int)num, *len))) {
+        return("MEM_ALLOC_ERR");
+    }
+    return (str);
+}
+
 char *convert_into_rum(unsigned int num, int len)
 {
 	char *str_rum;
@@ -26,7 +49,7 @@ char *convert_into_rum(unsigned int num, int len)
 	return (str_rum);
 }
 
-int check_num(float num)
+int check_num(const float num)
 {
 	if (((float) ((int) num ) == num)&&(num > 0 && num < 4000))
 		return (1);

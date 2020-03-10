@@ -13,9 +13,10 @@
 //– ревью - процесс итерационный. До наступления дедлайна можно проходить несколько итераций, улучшая свою оценку. Решения после дедлайна не принимаются;
 //– дедлайн - РК №1, 11.03.2020
 
-//для запуска тестов введите /a.out --test
-
 #include "../includes/ft_rome.h"
+
+void test();
+char* ft_main_test(int (*len), float test_val);
 
 int main()
 {
@@ -23,4 +24,64 @@ int main()
 	return (0);
 }
 
+char* ft_main_test(int (*len), float test_val)
+{
+    char *str = NULL;
 
+    (*len) = 0;
+
+    if (!check_num(test_val)) {
+        return("WRONG_NUMBER");
+    }
+    count_len((int)test_val, len);
+    if (!(str = convert_into_rum((int)test_val, *len))) {
+        return("MEM_ALLOC_ERR");
+    }
+    return (str);
+}
+
+void test()
+{
+    int size = 10;
+    float tests[]={15, 987, 100, 99, 3999, 174, 1, 5.0, 3333, 10};
+    char *answ[]={"XV", "CMLXXXVII", "C", "XCIX", "MMMCMXCIX","CLXXIV", "I","V", "MMMCCCXXXIII", "X"};
+    int len_answ[]={2,9, 1, 4, 9, 6, 1, 1, 12, 1};
+
+    float wrong_tests[]={-15, 0, 4000, 5.2, -7.008, 8008, 1234567, -0, 0.0, -1};
+
+
+    //roman правильно переводит из десятичной системы счисления в римскую
+    for (int i = 0; i < size; i++)
+    {
+        int len = 0;
+        char *str = NULL;
+        assert(strcmp(str = ft_main_test(&len, tests[i]), answ[i]) == 0);
+        free(str);
+    }
+    //roman правильно реагирует на некорректные значения
+    for (int i = 0; i < size; i++)
+    {
+        int len = 0;
+        assert(strcmp(ft_main_test(&len, wrong_tests[i]), "WRONG_NUMBER") == 0);
+    }
+
+    //проверка на длину корректной выходной строки
+    for (int i = 0; i < size; i++)
+    {
+        char *str;
+        int len = 0;
+        str = ft_main_test( &len, tests[i]);
+        free(str);
+        assert(len == len_answ[i]);
+    }
+
+    //проверка на длину некорректной выходной строки
+    for (int i = 0; i < size; i++)
+    {
+        int len = 0;
+        ft_main_test(&len, wrong_tests[i]);
+        assert(len == 0);
+    }
+
+    printf("ok!\n");
+}

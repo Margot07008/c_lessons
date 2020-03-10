@@ -1,6 +1,9 @@
 cmake_minimum_required(VERSION 3.9)
-project(dz1 C)
+project(dz1)
 
-set(CMAKE_C_STANDARD 99)
+add_subdirectory(make_console)
+add_subdirectory(make_test)
 
-add_executable(dz1 src/main_test.c src/functions.c includes/ft_rome.h test/test_func.c)
+add_custom_target(dz1)
+
+add_dependencies(dz1 console test)

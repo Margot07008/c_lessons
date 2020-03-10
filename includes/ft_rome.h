@@ -17,8 +17,6 @@ int check_num(const float num);
 void count_len(unsigned int num, int*len);
 int add_len(int count);
 char *convert_into_rum(unsigned int num, int len);
-void test();
-char* ft_main(int need_test, int *len, float test_val);
-
+int need_to_clear(char *str);
 
 #endif //DZ1_FT_ROME_H

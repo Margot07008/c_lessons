@@ -6,4 +6,4 @@ add_subdirectory(make_test)
 
 add_custom_target(dz1)
 
-add_dependencies(dz1 test console)
+add_dependencies(dz1 test_c console)

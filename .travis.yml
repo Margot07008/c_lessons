@@ -23,13 +23,10 @@ addons:
       - cppcheck
 
 script:
-  - sudo ln -s /usr/bin/gcc-6 /usr/local/bin/gcc
-  - export CC=/usr/bin/gcc-6
   - mkdir build
   - cd build
   - cmake ../.
+  - cppcheck --enable=all --std=c99 --check-config --suppress=missingIncludeSystem -I ../includes/ ../src/
   - cd make_test
   - make
   - valgrind --tool=memcheck --leak-check=full ./dz1
-  - cppcheck --enable=all --std=c99 --check-config --suppress=missingIncludeSystem -I ../includes/ ../src/
-  - ./dz1

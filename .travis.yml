@@ -1,0 +1,45 @@
+dist: trusty
+sudo: required
+
+language:
+  - c
+
+branches:
+  only:
+    - dz2
+
+os: linux
+
+compiler:
+  - gcc
+
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+    packages:
+      - cmake
+      - gcc
+      - valgrind
+      - cppcheck
+
+install:
+  - sudo apt install libgtest-dev
+  - cd /usr/src/gtest
+  - dir
+  - sudo cmake CMakeLists.txt
+  - sudo make
+  - sudo mv libgtest* /usr/lib/
+  - cd "${TRAVIS_BUILD_DIR}"
+
+script:
+  - mkdir build
+  - cd build
+  - cmake ./..
+  - make
+  - cppcheck --enable=all --std=c99 --check-config --suppress=missingIncludeSystem -I ../includes/ ../for_static_library/
+  - cppcheck --enable=all --std=c99 --check-config --suppress=missingIncludeSystem -I ../includes/ ../for_dynamic_library/
+  - cppcheck --enable=all --std=c99 --check-config --suppress=missingIncludeSystem -I ../includes/ ../utils/
+  - valgrind --tool=memcheck --leak-check=full ./multi_thread 10000
+  - valgrind --tool=memcheck --leak-check=full ./single_thread 10000
+  - ./gtest_test

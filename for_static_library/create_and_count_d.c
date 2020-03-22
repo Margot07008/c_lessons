@@ -7,7 +7,7 @@
 int *create_matrix_singl(int size, int **d_sum)
 {
 	int **matrix = dynamic_array_alloc(size);
-	filling_matrix_from_k(&matrix, size);
+    filling_matrix_auto(&matrix, size);
 //	dynamic_array_print(matrix, size);
 	count_diagonal_sum_singl(matrix, size, &(*d_sum), 0);
 	dynamic_array_free(&matrix, size);

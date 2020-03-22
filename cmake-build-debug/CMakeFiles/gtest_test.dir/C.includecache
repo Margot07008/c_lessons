@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/margot/dz_2/includes/header.h
+stdio.h
+-
+stdlib.h
+-
+assert.h
+-
+pthread.h
+-
+sys/sysinfo.h
+-
+
+/home/margot/dz_2/tests/test_main.c
+../includes/header.h
+/home/margot/dz_2/includes/header.h
+

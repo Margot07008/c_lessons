@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "/home/margot/Downloads/clion-2019.3.4/bin/cmake/linux/share/cmake-3.15/Modules/CMakeCInformation.cmake"
+  "/home/margot/Downloads/clion-2019.3.4/bin/cmake/linux/share/cmake-3.15/Modules/CMakeCXXInformation.cmake"
   "/home/margot/Downloads/clion-2019.3.4/bin/cmake/linux/share/cmake-3.15/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake"
   "/home/margot/Downloads/clion-2019.3.4/bin/cmake/linux/share/cmake-3.15/Modules/CMakeCommonLanguageInclude.cmake"
   "/home/margot/Downloads/clion-2019.3.4/bin/cmake/linux/share/cmake-3.15/Modules/CMakeExtraGeneratorDetermineCompilerMacrosAndIncludeDirs.cmake"
@@ -17,17 +18,28 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/margot/Downloads/clion-2019.3.4/bin/cmake/linux/share/cmake-3.15/Modules/CMakeLanguageInformation.cmake"
   "/home/margot/Downloads/clion-2019.3.4/bin/cmake/linux/share/cmake-3.15/Modules/CMakeSystemSpecificInformation.cmake"
   "/home/margot/Downloads/clion-2019.3.4/bin/cmake/linux/share/cmake-3.15/Modules/CMakeSystemSpecificInitialize.cmake"
+  "/home/margot/Downloads/clion-2019.3.4/bin/cmake/linux/share/cmake-3.15/Modules/CheckCSourceCompiles.cmake"
+  "/home/margot/Downloads/clion-2019.3.4/bin/cmake/linux/share/cmake-3.15/Modules/CheckIncludeFile.cmake"
+  "/home/margot/Downloads/clion-2019.3.4/bin/cmake/linux/share/cmake-3.15/Modules/CheckLibraryExists.cmake"
   "/home/margot/Downloads/clion-2019.3.4/bin/cmake/linux/share/cmake-3.15/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
   "/home/margot/Downloads/clion-2019.3.4/bin/cmake/linux/share/cmake-3.15/Modules/Compiler/GNU-C.cmake"
+  "/home/margot/Downloads/clion-2019.3.4/bin/cmake/linux/share/cmake-3.15/Modules/Compiler/GNU-CXX.cmake"
   "/home/margot/Downloads/clion-2019.3.4/bin/cmake/linux/share/cmake-3.15/Modules/Compiler/GNU.cmake"
+  "/home/margot/Downloads/clion-2019.3.4/bin/cmake/linux/share/cmake-3.15/Modules/FindGTest.cmake"
+  "/home/margot/Downloads/clion-2019.3.4/bin/cmake/linux/share/cmake-3.15/Modules/FindPackageHandleStandardArgs.cmake"
+  "/home/margot/Downloads/clion-2019.3.4/bin/cmake/linux/share/cmake-3.15/Modules/FindPackageMessage.cmake"
+  "/home/margot/Downloads/clion-2019.3.4/bin/cmake/linux/share/cmake-3.15/Modules/FindThreads.cmake"
+  "/home/margot/Downloads/clion-2019.3.4/bin/cmake/linux/share/cmake-3.15/Modules/GoogleTest.cmake"
   "/home/margot/Downloads/clion-2019.3.4/bin/cmake/linux/share/cmake-3.15/Modules/Internal/CMakeCheckCompilerFlag.cmake"
   "/home/margot/Downloads/clion-2019.3.4/bin/cmake/linux/share/cmake-3.15/Modules/Platform/Linux-GNU-C.cmake"
+  "/home/margot/Downloads/clion-2019.3.4/bin/cmake/linux/share/cmake-3.15/Modules/Platform/Linux-GNU-CXX.cmake"
   "/home/margot/Downloads/clion-2019.3.4/bin/cmake/linux/share/cmake-3.15/Modules/Platform/Linux-GNU.cmake"
   "/home/margot/Downloads/clion-2019.3.4/bin/cmake/linux/share/cmake-3.15/Modules/Platform/Linux.cmake"
   "/home/margot/Downloads/clion-2019.3.4/bin/cmake/linux/share/cmake-3.15/Modules/Platform/UnixPaths.cmake"
   "/home/margot/Downloads/clion-2019.3.4/bin/cmake/linux/share/cmake-3.15/Modules/ProcessorCount.cmake"
   "../CMakeLists.txt"
   "CMakeFiles/3.15.3/CMakeCCompiler.cmake"
+  "CMakeFiles/3.15.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.15.3/CMakeSystem.cmake"
   )
 
@@ -44,5 +56,9 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/dz_2.dir/DependInfo.cmake"
+  "CMakeFiles/static.dir/DependInfo.cmake"
+  "CMakeFiles/single_thread.dir/DependInfo.cmake"
+  "CMakeFiles/dynamic.dir/DependInfo.cmake"
+  "CMakeFiles/multi_thread.dir/DependInfo.cmake"
+  "CMakeFiles/gtest_test.dir/DependInfo.cmake"
   )

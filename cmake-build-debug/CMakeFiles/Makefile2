@@ -53,12 +53,20 @@ CMAKE_BINARY_DIR = /home/margot/dz_2/cmake-build-debug
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/dz_2.dir/all
+all: CMakeFiles/static.dir/all
+all: CMakeFiles/single_thread.dir/all
+all: CMakeFiles/dynamic.dir/all
+all: CMakeFiles/multi_thread.dir/all
+all: CMakeFiles/gtest_test.dir/all
 
 .PHONY : all
 
 # The main recursive "clean" target.
-clean: CMakeFiles/dz_2.dir/clean
+clean: CMakeFiles/static.dir/clean
+clean: CMakeFiles/single_thread.dir/clean
+clean: CMakeFiles/dynamic.dir/clean
+clean: CMakeFiles/multi_thread.dir/clean
+clean: CMakeFiles/gtest_test.dir/clean
 
 .PHONY : clean
 
@@ -68,31 +76,140 @@ preinstall:
 .PHONY : preinstall
 
 #=============================================================================
-# Target rules for target CMakeFiles/dz_2.dir
+# Target rules for target CMakeFiles/static.dir
 
 # All Build rule for target.
-CMakeFiles/dz_2.dir/all:
-	$(MAKE) -f CMakeFiles/dz_2.dir/build.make CMakeFiles/dz_2.dir/depend
-	$(MAKE) -f CMakeFiles/dz_2.dir/build.make CMakeFiles/dz_2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/margot/dz_2/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10 "Built target dz_2"
-.PHONY : CMakeFiles/dz_2.dir/all
+CMakeFiles/static.dir/all:
+	$(MAKE) -f CMakeFiles/static.dir/build.make CMakeFiles/static.dir/depend
+	$(MAKE) -f CMakeFiles/static.dir/build.make CMakeFiles/static.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/margot/dz_2/cmake-build-debug/CMakeFiles --progress-num=23,24,25,26 "Built target static"
+.PHONY : CMakeFiles/static.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/dz_2.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/margot/dz_2/cmake-build-debug/CMakeFiles 10
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/dz_2.dir/all
+CMakeFiles/static.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/margot/dz_2/cmake-build-debug/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/static.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/margot/dz_2/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/dz_2.dir/rule
+.PHONY : CMakeFiles/static.dir/rule
 
 # Convenience name for target.
-dz_2: CMakeFiles/dz_2.dir/rule
+static: CMakeFiles/static.dir/rule
 
-.PHONY : dz_2
+.PHONY : static
 
 # clean rule for target.
-CMakeFiles/dz_2.dir/clean:
-	$(MAKE) -f CMakeFiles/dz_2.dir/build.make CMakeFiles/dz_2.dir/clean
-.PHONY : CMakeFiles/dz_2.dir/clean
+CMakeFiles/static.dir/clean:
+	$(MAKE) -f CMakeFiles/static.dir/build.make CMakeFiles/static.dir/clean
+.PHONY : CMakeFiles/static.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/single_thread.dir
+
+# All Build rule for target.
+CMakeFiles/single_thread.dir/all: CMakeFiles/static.dir/all
+	$(MAKE) -f CMakeFiles/single_thread.dir/build.make CMakeFiles/single_thread.dir/depend
+	$(MAKE) -f CMakeFiles/single_thread.dir/build.make CMakeFiles/single_thread.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/margot/dz_2/cmake-build-debug/CMakeFiles --progress-num=21,22 "Built target single_thread"
+.PHONY : CMakeFiles/single_thread.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/single_thread.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/margot/dz_2/cmake-build-debug/CMakeFiles 6
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/single_thread.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/margot/dz_2/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/single_thread.dir/rule
+
+# Convenience name for target.
+single_thread: CMakeFiles/single_thread.dir/rule
+
+.PHONY : single_thread
+
+# clean rule for target.
+CMakeFiles/single_thread.dir/clean:
+	$(MAKE) -f CMakeFiles/single_thread.dir/build.make CMakeFiles/single_thread.dir/clean
+.PHONY : CMakeFiles/single_thread.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/dynamic.dir
+
+# All Build rule for target.
+CMakeFiles/dynamic.dir/all:
+	$(MAKE) -f CMakeFiles/dynamic.dir/build.make CMakeFiles/dynamic.dir/depend
+	$(MAKE) -f CMakeFiles/dynamic.dir/build.make CMakeFiles/dynamic.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/margot/dz_2/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target dynamic"
+.PHONY : CMakeFiles/dynamic.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/dynamic.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/margot/dz_2/cmake-build-debug/CMakeFiles 7
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/dynamic.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/margot/dz_2/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/dynamic.dir/rule
+
+# Convenience name for target.
+dynamic: CMakeFiles/dynamic.dir/rule
+
+.PHONY : dynamic
+
+# clean rule for target.
+CMakeFiles/dynamic.dir/clean:
+	$(MAKE) -f CMakeFiles/dynamic.dir/build.make CMakeFiles/dynamic.dir/clean
+.PHONY : CMakeFiles/dynamic.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/multi_thread.dir
+
+# All Build rule for target.
+CMakeFiles/multi_thread.dir/all: CMakeFiles/dynamic.dir/all
+	$(MAKE) -f CMakeFiles/multi_thread.dir/build.make CMakeFiles/multi_thread.dir/depend
+	$(MAKE) -f CMakeFiles/multi_thread.dir/build.make CMakeFiles/multi_thread.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/margot/dz_2/cmake-build-debug/CMakeFiles --progress-num=19,20 "Built target multi_thread"
+.PHONY : CMakeFiles/multi_thread.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/multi_thread.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/margot/dz_2/cmake-build-debug/CMakeFiles 9
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/multi_thread.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/margot/dz_2/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/multi_thread.dir/rule
+
+# Convenience name for target.
+multi_thread: CMakeFiles/multi_thread.dir/rule
+
+.PHONY : multi_thread
+
+# clean rule for target.
+CMakeFiles/multi_thread.dir/clean:
+	$(MAKE) -f CMakeFiles/multi_thread.dir/build.make CMakeFiles/multi_thread.dir/clean
+.PHONY : CMakeFiles/multi_thread.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/gtest_test.dir
+
+# All Build rule for target.
+CMakeFiles/gtest_test.dir/all: CMakeFiles/dynamic.dir/all
+CMakeFiles/gtest_test.dir/all: CMakeFiles/static.dir/all
+	$(MAKE) -f CMakeFiles/gtest_test.dir/build.make CMakeFiles/gtest_test.dir/depend
+	$(MAKE) -f CMakeFiles/gtest_test.dir/build.make CMakeFiles/gtest_test.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/margot/dz_2/cmake-build-debug/CMakeFiles --progress-num=8,9,10,11,12,13,14,15,16,17,18 "Built target gtest_test"
+.PHONY : CMakeFiles/gtest_test.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/gtest_test.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/margot/dz_2/cmake-build-debug/CMakeFiles 22
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/gtest_test.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/margot/dz_2/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/gtest_test.dir/rule
+
+# Convenience name for target.
+gtest_test: CMakeFiles/gtest_test.dir/rule
+
+.PHONY : gtest_test
+
+# clean rule for target.
+CMakeFiles/gtest_test.dir/clean:
+	$(MAKE) -f CMakeFiles/gtest_test.dir/build.make CMakeFiles/gtest_test.dir/clean
+.PHONY : CMakeFiles/gtest_test.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

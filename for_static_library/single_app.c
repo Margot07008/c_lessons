@@ -1,10 +1,11 @@
 #include "../includes/header.h"
 
-int main() {
 
-	int size = 0;
+int main(int argc, char **argv) {
 
-	scanf("%d", &size);
+    char *p = NULL;
+
+    int size = (int)strtol(argv[1], &p, 10);
 	int *d_sum = NULL;
 
 	create_matrix_singl(size, &d_sum);

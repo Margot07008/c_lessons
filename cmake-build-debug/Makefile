@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/margot/dz_2/cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/margot/Downloads/clion-2019.3.4/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -77,6 +66,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/home/margot/Downloads/clion-2019.3.4/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -111,17 +111,69 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named dz_2
+# Target rules for targets named static
 
 # Build rule for target.
-dz_2: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 dz_2
-.PHONY : dz_2
+static: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 static
+.PHONY : static
 
 # fast build rule for target.
-dz_2/fast:
-	$(MAKE) -f CMakeFiles/dz_2.dir/build.make CMakeFiles/dz_2.dir/build
-.PHONY : dz_2/fast
+static/fast:
+	$(MAKE) -f CMakeFiles/static.dir/build.make CMakeFiles/static.dir/build
+.PHONY : static/fast
+
+#=============================================================================
+# Target rules for targets named single_thread
+
+# Build rule for target.
+single_thread: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 single_thread
+.PHONY : single_thread
+
+# fast build rule for target.
+single_thread/fast:
+	$(MAKE) -f CMakeFiles/single_thread.dir/build.make CMakeFiles/single_thread.dir/build
+.PHONY : single_thread/fast
+
+#=============================================================================
+# Target rules for targets named dynamic
+
+# Build rule for target.
+dynamic: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 dynamic
+.PHONY : dynamic
+
+# fast build rule for target.
+dynamic/fast:
+	$(MAKE) -f CMakeFiles/dynamic.dir/build.make CMakeFiles/dynamic.dir/build
+.PHONY : dynamic/fast
+
+#=============================================================================
+# Target rules for targets named multi_thread
+
+# Build rule for target.
+multi_thread: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 multi_thread
+.PHONY : multi_thread
+
+# fast build rule for target.
+multi_thread/fast:
+	$(MAKE) -f CMakeFiles/multi_thread.dir/build.make CMakeFiles/multi_thread.dir/build
+.PHONY : multi_thread/fast
+
+#=============================================================================
+# Target rules for targets named gtest_test
+
+# Build rule for target.
+gtest_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gtest_test
+.PHONY : gtest_test
+
+# fast build rule for target.
+gtest_test/fast:
+	$(MAKE) -f CMakeFiles/gtest_test.dir/build.make CMakeFiles/gtest_test.dir/build
+.PHONY : gtest_test/fast
 
 for_dynamic_library/create_and_count_matrix.o: for_dynamic_library/create_and_count_matrix.c.o
 
@@ -129,7 +181,8 @@ for_dynamic_library/create_and_count_matrix.o: for_dynamic_library/create_and_co
 
 # target to build an object file
 for_dynamic_library/create_and_count_matrix.c.o:
-	$(MAKE) -f CMakeFiles/dz_2.dir/build.make CMakeFiles/dz_2.dir/for_dynamic_library/create_and_count_matrix.c.o
+	$(MAKE) -f CMakeFiles/dynamic.dir/build.make CMakeFiles/dynamic.dir/for_dynamic_library/create_and_count_matrix.c.o
+	$(MAKE) -f CMakeFiles/gtest_test.dir/build.make CMakeFiles/gtest_test.dir/for_dynamic_library/create_and_count_matrix.c.o
 .PHONY : for_dynamic_library/create_and_count_matrix.c.o
 
 for_dynamic_library/create_and_count_matrix.i: for_dynamic_library/create_and_count_matrix.c.i
@@ -138,7 +191,8 @@ for_dynamic_library/create_and_count_matrix.i: for_dynamic_library/create_and_co
 
 # target to preprocess a source file
 for_dynamic_library/create_and_count_matrix.c.i:
-	$(MAKE) -f CMakeFiles/dz_2.dir/build.make CMakeFiles/dz_2.dir/for_dynamic_library/create_and_count_matrix.c.i
+	$(MAKE) -f CMakeFiles/dynamic.dir/build.make CMakeFiles/dynamic.dir/for_dynamic_library/create_and_count_matrix.c.i
+	$(MAKE) -f CMakeFiles/gtest_test.dir/build.make CMakeFiles/gtest_test.dir/for_dynamic_library/create_and_count_matrix.c.i
 .PHONY : for_dynamic_library/create_and_count_matrix.c.i
 
 for_dynamic_library/create_and_count_matrix.s: for_dynamic_library/create_and_count_matrix.c.s
@@ -147,7 +201,8 @@ for_dynamic_library/create_and_count_matrix.s: for_dynamic_library/create_and_co
 
 # target to generate assembly for a file
 for_dynamic_library/create_and_count_matrix.c.s:
-	$(MAKE) -f CMakeFiles/dz_2.dir/build.make CMakeFiles/dz_2.dir/for_dynamic_library/create_and_count_matrix.c.s
+	$(MAKE) -f CMakeFiles/dynamic.dir/build.make CMakeFiles/dynamic.dir/for_dynamic_library/create_and_count_matrix.c.s
+	$(MAKE) -f CMakeFiles/gtest_test.dir/build.make CMakeFiles/gtest_test.dir/for_dynamic_library/create_and_count_matrix.c.s
 .PHONY : for_dynamic_library/create_and_count_matrix.c.s
 
 for_dynamic_library/creating_processes.o: for_dynamic_library/creating_processes.c.o
@@ -156,7 +211,8 @@ for_dynamic_library/creating_processes.o: for_dynamic_library/creating_processes
 
 # target to build an object file
 for_dynamic_library/creating_processes.c.o:
-	$(MAKE) -f CMakeFiles/dz_2.dir/build.make CMakeFiles/dz_2.dir/for_dynamic_library/creating_processes.c.o
+	$(MAKE) -f CMakeFiles/dynamic.dir/build.make CMakeFiles/dynamic.dir/for_dynamic_library/creating_processes.c.o
+	$(MAKE) -f CMakeFiles/gtest_test.dir/build.make CMakeFiles/gtest_test.dir/for_dynamic_library/creating_processes.c.o
 .PHONY : for_dynamic_library/creating_processes.c.o
 
 for_dynamic_library/creating_processes.i: for_dynamic_library/creating_processes.c.i
@@ -165,7 +221,8 @@ for_dynamic_library/creating_processes.i: for_dynamic_library/creating_processes
 
 # target to preprocess a source file
 for_dynamic_library/creating_processes.c.i:
-	$(MAKE) -f CMakeFiles/dz_2.dir/build.make CMakeFiles/dz_2.dir/for_dynamic_library/creating_processes.c.i
+	$(MAKE) -f CMakeFiles/dynamic.dir/build.make CMakeFiles/dynamic.dir/for_dynamic_library/creating_processes.c.i
+	$(MAKE) -f CMakeFiles/gtest_test.dir/build.make CMakeFiles/gtest_test.dir/for_dynamic_library/creating_processes.c.i
 .PHONY : for_dynamic_library/creating_processes.c.i
 
 for_dynamic_library/creating_processes.s: for_dynamic_library/creating_processes.c.s
@@ -174,7 +231,8 @@ for_dynamic_library/creating_processes.s: for_dynamic_library/creating_processes
 
 # target to generate assembly for a file
 for_dynamic_library/creating_processes.c.s:
-	$(MAKE) -f CMakeFiles/dz_2.dir/build.make CMakeFiles/dz_2.dir/for_dynamic_library/creating_processes.c.s
+	$(MAKE) -f CMakeFiles/dynamic.dir/build.make CMakeFiles/dynamic.dir/for_dynamic_library/creating_processes.c.s
+	$(MAKE) -f CMakeFiles/gtest_test.dir/build.make CMakeFiles/gtest_test.dir/for_dynamic_library/creating_processes.c.s
 .PHONY : for_dynamic_library/creating_processes.c.s
 
 for_dynamic_library/initial_struct_and_process.o: for_dynamic_library/initial_struct_and_process.c.o
@@ -183,7 +241,8 @@ for_dynamic_library/initial_struct_and_process.o: for_dynamic_library/initial_st
 
 # target to build an object file
 for_dynamic_library/initial_struct_and_process.c.o:
-	$(MAKE) -f CMakeFiles/dz_2.dir/build.make CMakeFiles/dz_2.dir/for_dynamic_library/initial_struct_and_process.c.o
+	$(MAKE) -f CMakeFiles/dynamic.dir/build.make CMakeFiles/dynamic.dir/for_dynamic_library/initial_struct_and_process.c.o
+	$(MAKE) -f CMakeFiles/gtest_test.dir/build.make CMakeFiles/gtest_test.dir/for_dynamic_library/initial_struct_and_process.c.o
 .PHONY : for_dynamic_library/initial_struct_and_process.c.o
 
 for_dynamic_library/initial_struct_and_process.i: for_dynamic_library/initial_struct_and_process.c.i
@@ -192,7 +251,8 @@ for_dynamic_library/initial_struct_and_process.i: for_dynamic_library/initial_st
 
 # target to preprocess a source file
 for_dynamic_library/initial_struct_and_process.c.i:
-	$(MAKE) -f CMakeFiles/dz_2.dir/build.make CMakeFiles/dz_2.dir/for_dynamic_library/initial_struct_and_process.c.i
+	$(MAKE) -f CMakeFiles/dynamic.dir/build.make CMakeFiles/dynamic.dir/for_dynamic_library/initial_struct_and_process.c.i
+	$(MAKE) -f CMakeFiles/gtest_test.dir/build.make CMakeFiles/gtest_test.dir/for_dynamic_library/initial_struct_and_process.c.i
 .PHONY : for_dynamic_library/initial_struct_and_process.c.i
 
 for_dynamic_library/initial_struct_and_process.s: for_dynamic_library/initial_struct_and_process.c.s
@@ -201,8 +261,39 @@ for_dynamic_library/initial_struct_and_process.s: for_dynamic_library/initial_st
 
 # target to generate assembly for a file
 for_dynamic_library/initial_struct_and_process.c.s:
-	$(MAKE) -f CMakeFiles/dz_2.dir/build.make CMakeFiles/dz_2.dir/for_dynamic_library/initial_struct_and_process.c.s
+	$(MAKE) -f CMakeFiles/dynamic.dir/build.make CMakeFiles/dynamic.dir/for_dynamic_library/initial_struct_and_process.c.s
+	$(MAKE) -f CMakeFiles/gtest_test.dir/build.make CMakeFiles/gtest_test.dir/for_dynamic_library/initial_struct_and_process.c.s
 .PHONY : for_dynamic_library/initial_struct_and_process.c.s
+
+for_dynamic_library/multipl_app.o: for_dynamic_library/multipl_app.c.o
+
+.PHONY : for_dynamic_library/multipl_app.o
+
+# target to build an object file
+for_dynamic_library/multipl_app.c.o:
+	$(MAKE) -f CMakeFiles/dynamic.dir/build.make CMakeFiles/dynamic.dir/for_dynamic_library/multipl_app.c.o
+	$(MAKE) -f CMakeFiles/multi_thread.dir/build.make CMakeFiles/multi_thread.dir/for_dynamic_library/multipl_app.c.o
+.PHONY : for_dynamic_library/multipl_app.c.o
+
+for_dynamic_library/multipl_app.i: for_dynamic_library/multipl_app.c.i
+
+.PHONY : for_dynamic_library/multipl_app.i
+
+# target to preprocess a source file
+for_dynamic_library/multipl_app.c.i:
+	$(MAKE) -f CMakeFiles/dynamic.dir/build.make CMakeFiles/dynamic.dir/for_dynamic_library/multipl_app.c.i
+	$(MAKE) -f CMakeFiles/multi_thread.dir/build.make CMakeFiles/multi_thread.dir/for_dynamic_library/multipl_app.c.i
+.PHONY : for_dynamic_library/multipl_app.c.i
+
+for_dynamic_library/multipl_app.s: for_dynamic_library/multipl_app.c.s
+
+.PHONY : for_dynamic_library/multipl_app.s
+
+# target to generate assembly for a file
+for_dynamic_library/multipl_app.c.s:
+	$(MAKE) -f CMakeFiles/dynamic.dir/build.make CMakeFiles/dynamic.dir/for_dynamic_library/multipl_app.c.s
+	$(MAKE) -f CMakeFiles/multi_thread.dir/build.make CMakeFiles/multi_thread.dir/for_dynamic_library/multipl_app.c.s
+.PHONY : for_dynamic_library/multipl_app.c.s
 
 for_static_library/create_and_count_d.o: for_static_library/create_and_count_d.c.o
 
@@ -210,7 +301,8 @@ for_static_library/create_and_count_d.o: for_static_library/create_and_count_d.c
 
 # target to build an object file
 for_static_library/create_and_count_d.c.o:
-	$(MAKE) -f CMakeFiles/dz_2.dir/build.make CMakeFiles/dz_2.dir/for_static_library/create_and_count_d.c.o
+	$(MAKE) -f CMakeFiles/static.dir/build.make CMakeFiles/static.dir/for_static_library/create_and_count_d.c.o
+	$(MAKE) -f CMakeFiles/gtest_test.dir/build.make CMakeFiles/gtest_test.dir/for_static_library/create_and_count_d.c.o
 .PHONY : for_static_library/create_and_count_d.c.o
 
 for_static_library/create_and_count_d.i: for_static_library/create_and_count_d.c.i
@@ -219,7 +311,8 @@ for_static_library/create_and_count_d.i: for_static_library/create_and_count_d.c
 
 # target to preprocess a source file
 for_static_library/create_and_count_d.c.i:
-	$(MAKE) -f CMakeFiles/dz_2.dir/build.make CMakeFiles/dz_2.dir/for_static_library/create_and_count_d.c.i
+	$(MAKE) -f CMakeFiles/static.dir/build.make CMakeFiles/static.dir/for_static_library/create_and_count_d.c.i
+	$(MAKE) -f CMakeFiles/gtest_test.dir/build.make CMakeFiles/gtest_test.dir/for_static_library/create_and_count_d.c.i
 .PHONY : for_static_library/create_and_count_d.c.i
 
 for_static_library/create_and_count_d.s: for_static_library/create_and_count_d.c.s
@@ -228,8 +321,39 @@ for_static_library/create_and_count_d.s: for_static_library/create_and_count_d.c
 
 # target to generate assembly for a file
 for_static_library/create_and_count_d.c.s:
-	$(MAKE) -f CMakeFiles/dz_2.dir/build.make CMakeFiles/dz_2.dir/for_static_library/create_and_count_d.c.s
+	$(MAKE) -f CMakeFiles/static.dir/build.make CMakeFiles/static.dir/for_static_library/create_and_count_d.c.s
+	$(MAKE) -f CMakeFiles/gtest_test.dir/build.make CMakeFiles/gtest_test.dir/for_static_library/create_and_count_d.c.s
 .PHONY : for_static_library/create_and_count_d.c.s
+
+for_static_library/single_app.o: for_static_library/single_app.c.o
+
+.PHONY : for_static_library/single_app.o
+
+# target to build an object file
+for_static_library/single_app.c.o:
+	$(MAKE) -f CMakeFiles/static.dir/build.make CMakeFiles/static.dir/for_static_library/single_app.c.o
+	$(MAKE) -f CMakeFiles/single_thread.dir/build.make CMakeFiles/single_thread.dir/for_static_library/single_app.c.o
+.PHONY : for_static_library/single_app.c.o
+
+for_static_library/single_app.i: for_static_library/single_app.c.i
+
+.PHONY : for_static_library/single_app.i
+
+# target to preprocess a source file
+for_static_library/single_app.c.i:
+	$(MAKE) -f CMakeFiles/static.dir/build.make CMakeFiles/static.dir/for_static_library/single_app.c.i
+	$(MAKE) -f CMakeFiles/single_thread.dir/build.make CMakeFiles/single_thread.dir/for_static_library/single_app.c.i
+.PHONY : for_static_library/single_app.c.i
+
+for_static_library/single_app.s: for_static_library/single_app.c.s
+
+.PHONY : for_static_library/single_app.s
+
+# target to generate assembly for a file
+for_static_library/single_app.c.s:
+	$(MAKE) -f CMakeFiles/static.dir/build.make CMakeFiles/static.dir/for_static_library/single_app.c.s
+	$(MAKE) -f CMakeFiles/single_thread.dir/build.make CMakeFiles/single_thread.dir/for_static_library/single_app.c.s
+.PHONY : for_static_library/single_app.c.s
 
 tests/for_dynamic.o: tests/for_dynamic.c.o
 
@@ -237,7 +361,7 @@ tests/for_dynamic.o: tests/for_dynamic.c.o
 
 # target to build an object file
 tests/for_dynamic.c.o:
-	$(MAKE) -f CMakeFiles/dz_2.dir/build.make CMakeFiles/dz_2.dir/tests/for_dynamic.c.o
+	$(MAKE) -f CMakeFiles/gtest_test.dir/build.make CMakeFiles/gtest_test.dir/tests/for_dynamic.c.o
 .PHONY : tests/for_dynamic.c.o
 
 tests/for_dynamic.i: tests/for_dynamic.c.i
@@ -246,7 +370,7 @@ tests/for_dynamic.i: tests/for_dynamic.c.i
 
 # target to preprocess a source file
 tests/for_dynamic.c.i:
-	$(MAKE) -f CMakeFiles/dz_2.dir/build.make CMakeFiles/dz_2.dir/tests/for_dynamic.c.i
+	$(MAKE) -f CMakeFiles/gtest_test.dir/build.make CMakeFiles/gtest_test.dir/tests/for_dynamic.c.i
 .PHONY : tests/for_dynamic.c.i
 
 tests/for_dynamic.s: tests/for_dynamic.c.s
@@ -255,7 +379,7 @@ tests/for_dynamic.s: tests/for_dynamic.c.s
 
 # target to generate assembly for a file
 tests/for_dynamic.c.s:
-	$(MAKE) -f CMakeFiles/dz_2.dir/build.make CMakeFiles/dz_2.dir/tests/for_dynamic.c.s
+	$(MAKE) -f CMakeFiles/gtest_test.dir/build.make CMakeFiles/gtest_test.dir/tests/for_dynamic.c.s
 .PHONY : tests/for_dynamic.c.s
 
 tests/for_static.o: tests/for_static.c.o
@@ -264,7 +388,7 @@ tests/for_static.o: tests/for_static.c.o
 
 # target to build an object file
 tests/for_static.c.o:
-	$(MAKE) -f CMakeFiles/dz_2.dir/build.make CMakeFiles/dz_2.dir/tests/for_static.c.o
+	$(MAKE) -f CMakeFiles/gtest_test.dir/build.make CMakeFiles/gtest_test.dir/tests/for_static.c.o
 .PHONY : tests/for_static.c.o
 
 tests/for_static.i: tests/for_static.c.i
@@ -273,7 +397,7 @@ tests/for_static.i: tests/for_static.c.i
 
 # target to preprocess a source file
 tests/for_static.c.i:
-	$(MAKE) -f CMakeFiles/dz_2.dir/build.make CMakeFiles/dz_2.dir/tests/for_static.c.i
+	$(MAKE) -f CMakeFiles/gtest_test.dir/build.make CMakeFiles/gtest_test.dir/tests/for_static.c.i
 .PHONY : tests/for_static.c.i
 
 tests/for_static.s: tests/for_static.c.s
@@ -282,7 +406,7 @@ tests/for_static.s: tests/for_static.c.s
 
 # target to generate assembly for a file
 tests/for_static.c.s:
-	$(MAKE) -f CMakeFiles/dz_2.dir/build.make CMakeFiles/dz_2.dir/tests/for_static.c.s
+	$(MAKE) -f CMakeFiles/gtest_test.dir/build.make CMakeFiles/gtest_test.dir/tests/for_static.c.s
 .PHONY : tests/for_static.c.s
 
 tests/matrix_for_tests.o: tests/matrix_for_tests.c.o
@@ -291,7 +415,7 @@ tests/matrix_for_tests.o: tests/matrix_for_tests.c.o
 
 # target to build an object file
 tests/matrix_for_tests.c.o:
-	$(MAKE) -f CMakeFiles/dz_2.dir/build.make CMakeFiles/dz_2.dir/tests/matrix_for_tests.c.o
+	$(MAKE) -f CMakeFiles/gtest_test.dir/build.make CMakeFiles/gtest_test.dir/tests/matrix_for_tests.c.o
 .PHONY : tests/matrix_for_tests.c.o
 
 tests/matrix_for_tests.i: tests/matrix_for_tests.c.i
@@ -300,7 +424,7 @@ tests/matrix_for_tests.i: tests/matrix_for_tests.c.i
 
 # target to preprocess a source file
 tests/matrix_for_tests.c.i:
-	$(MAKE) -f CMakeFiles/dz_2.dir/build.make CMakeFiles/dz_2.dir/tests/matrix_for_tests.c.i
+	$(MAKE) -f CMakeFiles/gtest_test.dir/build.make CMakeFiles/gtest_test.dir/tests/matrix_for_tests.c.i
 .PHONY : tests/matrix_for_tests.c.i
 
 tests/matrix_for_tests.s: tests/matrix_for_tests.c.s
@@ -309,7 +433,7 @@ tests/matrix_for_tests.s: tests/matrix_for_tests.c.s
 
 # target to generate assembly for a file
 tests/matrix_for_tests.c.s:
-	$(MAKE) -f CMakeFiles/dz_2.dir/build.make CMakeFiles/dz_2.dir/tests/matrix_for_tests.c.s
+	$(MAKE) -f CMakeFiles/gtest_test.dir/build.make CMakeFiles/gtest_test.dir/tests/matrix_for_tests.c.s
 .PHONY : tests/matrix_for_tests.c.s
 
 tests/test_main.o: tests/test_main.c.o
@@ -318,7 +442,7 @@ tests/test_main.o: tests/test_main.c.o
 
 # target to build an object file
 tests/test_main.c.o:
-	$(MAKE) -f CMakeFiles/dz_2.dir/build.make CMakeFiles/dz_2.dir/tests/test_main.c.o
+	$(MAKE) -f CMakeFiles/gtest_test.dir/build.make CMakeFiles/gtest_test.dir/tests/test_main.c.o
 .PHONY : tests/test_main.c.o
 
 tests/test_main.i: tests/test_main.c.i
@@ -327,7 +451,7 @@ tests/test_main.i: tests/test_main.c.i
 
 # target to preprocess a source file
 tests/test_main.c.i:
-	$(MAKE) -f CMakeFiles/dz_2.dir/build.make CMakeFiles/dz_2.dir/tests/test_main.c.i
+	$(MAKE) -f CMakeFiles/gtest_test.dir/build.make CMakeFiles/gtest_test.dir/tests/test_main.c.i
 .PHONY : tests/test_main.c.i
 
 tests/test_main.s: tests/test_main.c.s
@@ -336,8 +460,38 @@ tests/test_main.s: tests/test_main.c.s
 
 # target to generate assembly for a file
 tests/test_main.c.s:
-	$(MAKE) -f CMakeFiles/dz_2.dir/build.make CMakeFiles/dz_2.dir/tests/test_main.c.s
+	$(MAKE) -f CMakeFiles/gtest_test.dir/build.make CMakeFiles/gtest_test.dir/tests/test_main.c.s
 .PHONY : tests/test_main.c.s
+
+utils/free_f.o: utils/free_f.c.o
+
+.PHONY : utils/free_f.o
+
+# target to build an object file
+utils/free_f.c.o:
+	$(MAKE) -f CMakeFiles/dynamic.dir/build.make CMakeFiles/dynamic.dir/utils/free_f.c.o
+	$(MAKE) -f CMakeFiles/gtest_test.dir/build.make CMakeFiles/gtest_test.dir/utils/free_f.c.o
+.PHONY : utils/free_f.c.o
+
+utils/free_f.i: utils/free_f.c.i
+
+.PHONY : utils/free_f.i
+
+# target to preprocess a source file
+utils/free_f.c.i:
+	$(MAKE) -f CMakeFiles/dynamic.dir/build.make CMakeFiles/dynamic.dir/utils/free_f.c.i
+	$(MAKE) -f CMakeFiles/gtest_test.dir/build.make CMakeFiles/gtest_test.dir/utils/free_f.c.i
+.PHONY : utils/free_f.c.i
+
+utils/free_f.s: utils/free_f.c.s
+
+.PHONY : utils/free_f.s
+
+# target to generate assembly for a file
+utils/free_f.c.s:
+	$(MAKE) -f CMakeFiles/dynamic.dir/build.make CMakeFiles/dynamic.dir/utils/free_f.c.s
+	$(MAKE) -f CMakeFiles/gtest_test.dir/build.make CMakeFiles/gtest_test.dir/utils/free_f.c.s
+.PHONY : utils/free_f.c.s
 
 utils/standart_matrix_func.o: utils/standart_matrix_func.c.o
 
@@ -345,7 +499,9 @@ utils/standart_matrix_func.o: utils/standart_matrix_func.c.o
 
 # target to build an object file
 utils/standart_matrix_func.c.o:
-	$(MAKE) -f CMakeFiles/dz_2.dir/build.make CMakeFiles/dz_2.dir/utils/standart_matrix_func.c.o
+	$(MAKE) -f CMakeFiles/static.dir/build.make CMakeFiles/static.dir/utils/standart_matrix_func.c.o
+	$(MAKE) -f CMakeFiles/dynamic.dir/build.make CMakeFiles/dynamic.dir/utils/standart_matrix_func.c.o
+	$(MAKE) -f CMakeFiles/gtest_test.dir/build.make CMakeFiles/gtest_test.dir/utils/standart_matrix_func.c.o
 .PHONY : utils/standart_matrix_func.c.o
 
 utils/standart_matrix_func.i: utils/standart_matrix_func.c.i
@@ -354,7 +510,9 @@ utils/standart_matrix_func.i: utils/standart_matrix_func.c.i
 
 # target to preprocess a source file
 utils/standart_matrix_func.c.i:
-	$(MAKE) -f CMakeFiles/dz_2.dir/build.make CMakeFiles/dz_2.dir/utils/standart_matrix_func.c.i
+	$(MAKE) -f CMakeFiles/static.dir/build.make CMakeFiles/static.dir/utils/standart_matrix_func.c.i
+	$(MAKE) -f CMakeFiles/dynamic.dir/build.make CMakeFiles/dynamic.dir/utils/standart_matrix_func.c.i
+	$(MAKE) -f CMakeFiles/gtest_test.dir/build.make CMakeFiles/gtest_test.dir/utils/standart_matrix_func.c.i
 .PHONY : utils/standart_matrix_func.c.i
 
 utils/standart_matrix_func.s: utils/standart_matrix_func.c.s
@@ -363,7 +521,9 @@ utils/standart_matrix_func.s: utils/standart_matrix_func.c.s
 
 # target to generate assembly for a file
 utils/standart_matrix_func.c.s:
-	$(MAKE) -f CMakeFiles/dz_2.dir/build.make CMakeFiles/dz_2.dir/utils/standart_matrix_func.c.s
+	$(MAKE) -f CMakeFiles/static.dir/build.make CMakeFiles/static.dir/utils/standart_matrix_func.c.s
+	$(MAKE) -f CMakeFiles/dynamic.dir/build.make CMakeFiles/dynamic.dir/utils/standart_matrix_func.c.s
+	$(MAKE) -f CMakeFiles/gtest_test.dir/build.make CMakeFiles/gtest_test.dir/utils/standart_matrix_func.c.s
 .PHONY : utils/standart_matrix_func.c.s
 
 # Help Target
@@ -372,9 +532,13 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
-	@echo "... dz_2"
+	@echo "... static"
+	@echo "... single_thread"
+	@echo "... dynamic"
 	@echo "... edit_cache"
+	@echo "... rebuild_cache"
+	@echo "... multi_thread"
+	@echo "... gtest_test"
 	@echo "... for_dynamic_library/create_and_count_matrix.o"
 	@echo "... for_dynamic_library/create_and_count_matrix.i"
 	@echo "... for_dynamic_library/create_and_count_matrix.s"
@@ -384,9 +548,15 @@ help:
 	@echo "... for_dynamic_library/initial_struct_and_process.o"
 	@echo "... for_dynamic_library/initial_struct_and_process.i"
 	@echo "... for_dynamic_library/initial_struct_and_process.s"
+	@echo "... for_dynamic_library/multipl_app.o"
+	@echo "... for_dynamic_library/multipl_app.i"
+	@echo "... for_dynamic_library/multipl_app.s"
 	@echo "... for_static_library/create_and_count_d.o"
 	@echo "... for_static_library/create_and_count_d.i"
 	@echo "... for_static_library/create_and_count_d.s"
+	@echo "... for_static_library/single_app.o"
+	@echo "... for_static_library/single_app.i"
+	@echo "... for_static_library/single_app.s"
 	@echo "... tests/for_dynamic.o"
 	@echo "... tests/for_dynamic.i"
 	@echo "... tests/for_dynamic.s"
@@ -399,6 +569,9 @@ help:
 	@echo "... tests/test_main.o"
 	@echo "... tests/test_main.i"
 	@echo "... tests/test_main.s"
+	@echo "... utils/free_f.o"
+	@echo "... utils/free_f.i"
+	@echo "... utils/free_f.s"
 	@echo "... utils/standart_matrix_func.o"
 	@echo "... utils/standart_matrix_func.i"
 	@echo "... utils/standart_matrix_func.s"

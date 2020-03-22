@@ -44,6 +44,4 @@ void test_for_static()
 	create_matrix_singl_test(size, &d_sum, 1);
 	assert(is_equal(d_sum, template4, size) == 1);
 	free (d_sum);
-
-	printf("ok!");
 }

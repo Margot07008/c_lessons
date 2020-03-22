@@ -39,6 +39,4 @@ void test_fot_dynamic()
     create_matrix_multy_test(1);
     assert(is_equal(global_struct.arr_d, template4, global_struct.size) == 1);
     free_all ();
-
-    printf("ok!");
 }

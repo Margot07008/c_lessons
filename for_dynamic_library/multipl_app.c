@@ -2,7 +2,6 @@
 
 my_struct global_struct = {PTHREAD_MUTEX_INITIALIZER,0,0, 0 , 0, -1,-1,-1, NULL};
 
-void free_all();
 
 int main() {
 
@@ -18,13 +17,6 @@ int main() {
 	return 0;
 }
 
-void free_all()
-{
-    if (global_struct.arr_d)
-	    free(global_struct.arr_d);
-    if (&global_struct.mutex)
-	    pthread_mutex_destroy(&global_struct.mutex);
-}
 
 
 

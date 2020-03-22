@@ -3,6 +3,7 @@
 //
 
 #include "../includes/header.h"
+
 extern my_struct global_struct;
 
 void count_diagonal_sum()

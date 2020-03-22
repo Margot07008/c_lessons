@@ -41,6 +41,7 @@ void initial_struct();
 void *single_thrd(void *arg);
 void count_low_d(int **matrix, int start_i, int end_i, int start_index, int size);
 void count_up_d(int **matrix, int start_j, int end_j, int start_index, int size);
+void free_all();
 
 //single_app
 void count_diagonal_sum_singl(int **matrix, int size,int **d_sum, int d_num);
@@ -48,5 +49,10 @@ int *create_matrix_singl(int size, int **d_sum);
 
 //tests
 void test_for_static();
+void test_fot_dynamic();
+int *create_matrix_singl_test(int size, int **d_sum, int generation);
+void filling_matrix_for_test(int ***A, int N, int generation);
+void create_matrix_multy_test(int generation);
+
 
 #endif //DZ2_HEADER_H

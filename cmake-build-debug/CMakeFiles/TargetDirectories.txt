@@ -1,0 +1,3 @@
+/home/margot/dz_2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/margot/dz_2/cmake-build-debug/CMakeFiles/dz_2.dir
+/home/margot/dz_2/cmake-build-debug/CMakeFiles/edit_cache.dir

@@ -1,8 +1,11 @@
 //
 // Created by Margot on 20.03.2020.
 //
-#include "stdio.h"
-#include "stdlib.h"
+//#include "stdio.h"
+//#include "stdlib.h"
+
+#include "../includes/header.h"
+extern my_struct global_struct;
 
 void filling_matrix_from_k(int ***A, int N)
 {
@@ -62,3 +65,10 @@ void dynamic_array_free(int ***A, int N)
 	free(*A);
 }
 
+void free_all()
+{
+	if (global_struct.arr_d)
+		free(global_struct.arr_d);
+	if (&global_struct.mutex)
+		pthread_mutex_destroy(&global_struct.mutex);
+}

@@ -18,6 +18,11 @@ void count_diagonal_sum_singl(int **matrix, int size,int **d_sum, int d_num)
 {
 	int temp_sum = size - 1;
 	*d_sum = (int*)calloc(2*size - 1, sizeof(int));
+	if (!(*d_sum))
+    {
+        printf("ERROR_ALLOCATE_MEMORY");
+        exit(1);
+    }
 	//считаем все диагональные суммы до гл диагонали
 	while (temp_sum > 0)
 	{

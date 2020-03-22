@@ -32,8 +32,18 @@ void filling_matrix_auto(int ***A, int N)
 int** dynamic_array_alloc(int N)
 {
 	int **A = (int **)malloc(N*sizeof(int *));
+	if (!A)
+	{
+		printf("ERROR_ALLOCATE_MEMORY");
+		exit(1);
+	}
 	for(int i = 0; i < N; i++) {
 		A[i] = (int *)malloc(N*sizeof(int));
+		if (!A[i])
+		{
+			printf("ERROR_ALLOCATE_MEMORY");
+			exit(1);
+		}
 	}
 	return A;
 }

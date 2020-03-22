@@ -9,7 +9,11 @@ extern my_struct global_struct;
 void count_diagonal_sum()
 {
 
-	global_struct.arr_d =  (int*)calloc(2*global_struct.size - 1 , sizeof(int));;
+	if (!(global_struct.arr_d =  (int*)calloc(2*global_struct.size - 1 , sizeof(int))))
+    {
+	    printf("ERROR_ALLOCATE_MEMORY");
+	    exit(1);
+    }
 	global_struct.end_i = global_struct.size;
 
 	int opt_trds_cnt = get_nprocs() * 2 - 1;

@@ -50,9 +50,18 @@ int *create_matrix_singl_test(int size, int **d_sum, int generation)
     return (*d_sum);
 }
 
+
 void create_matrix_multy_test(int generation)
 {
     int size = global_struct.size;
+    global_struct.arr_d = NULL;
+    global_struct.matrix = NULL;
+    global_struct.start_i = 0;
+    global_struct.end_i = 0;
+    global_struct.start_j = 0;
+    global_struct.end_j = 0;
+    global_struct.index_start = -1;
+    global_struct.index_end = -1;
 
     global_struct.matrix = dynamic_array_alloc(size);
     filling_matrix_for_test(&global_struct.matrix, size, generation);

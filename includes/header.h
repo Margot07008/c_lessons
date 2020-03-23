@@ -32,7 +32,7 @@ void filling_matrix_from_k(int ***A, int N);
 void filling_matrix_auto(int ***A, int N);
 void dynamic_array_print(int **A, int N);
 void dynamic_array_free(int ***A, int N);
-int is_equal(int *arr, int *temp, int size);
+int is_equal(const int *arr, const int *template_arr, int size);
 
 //multi_thread_app
 void create_matrix();

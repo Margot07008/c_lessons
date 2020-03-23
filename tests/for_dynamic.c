@@ -46,6 +46,7 @@ int test_fot_dynamic()
 void create_matrix_multy_test(int generation)
 {
     int size = global_struct.size;
+    pthread_mutex_unlock(&global_struct.mutex);
     global_struct.arr_d = NULL;
     global_struct.matrix = NULL;
     global_struct.start_i = 0;

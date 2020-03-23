@@ -1,0 +1,2 @@
+/usr/bin/ar qc libstatic.a  CMakeFiles/static.dir/for_static_library/create_and_count_d.c.o CMakeFiles/static.dir/for_static_library/single_app.c.o CMakeFiles/static.dir/utils/standart_matrix_func.c.o
+/usr/bin/ranlib libstatic.a

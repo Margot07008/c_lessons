@@ -1,4 +1,5 @@
-https://travis-ci.com/Margot07008/c_lessons.svg?branch=dz2
+.. image:: https://travis-ci.com/Margot07008/c_lessons.svg?branch=dz2
+:target: https://travis-ci.com/Margot07008/c_lessons
 
 Условие ИЗ №2:
 В вашем распоряжении — квадратная матрица из 10 000 x 10 000 чисел. Составьте наивный алгоритм подсчета сумм диагональных элементов матрицы (для каждой диагонали),

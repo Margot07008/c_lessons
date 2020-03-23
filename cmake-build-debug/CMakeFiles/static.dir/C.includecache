@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/home/margot/dz_2/for_static_library/create_and_count_d.c
+../includes/header.h
+/home/margot/dz_2/includes/header.h
+
 /home/margot/dz_2/for_static_library/single_app.c
 ../includes/header.h
 /home/margot/dz_2/includes/header.h
@@ -21,4 +25,8 @@ pthread.h
 -
 sys/sysinfo.h
 -
+
+/home/margot/dz_2/utils/standart_matrix_func.c
+../includes/header.h
+/home/margot/dz_2/includes/header.h
 

@@ -32,7 +32,7 @@ void filling_matrix_from_k(int ***A, int N);
 void filling_matrix_auto(int ***A, int N);
 void dynamic_array_print(int **A, int N);
 void dynamic_array_free(int ***A, int N);
-int is_equal(int *arr, int* template, int size);
+int is_equal(int *arr, int *temp, int size);
 
 //multi_thread_app
 void create_matrix();
@@ -48,8 +48,8 @@ void count_diagonal_sum_singl(int **matrix, int size,int **d_sum, int d_num);
 int *create_matrix_singl(int size, int **d_sum);
 
 //tests
-void test_for_static();
-void test_fot_dynamic();
+int test_for_static();
+int test_fot_dynamic();
 int *create_matrix_singl_test(int size, int **d_sum, int generation);
 void filling_matrix_for_test(int ***A, int N, int generation);
 void create_matrix_multy_test(int generation);

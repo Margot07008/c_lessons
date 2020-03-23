@@ -280,15 +280,12 @@
 		</Build>
 		<Unit filename="/home/margot/dz_2/for_dynamic_library/create_and_count_matrix.c">
 			<Option target="dynamic"/>
-			<Option target="gtest_test"/>
 		</Unit>
 		<Unit filename="/home/margot/dz_2/for_dynamic_library/creating_processes.c">
 			<Option target="dynamic"/>
-			<Option target="gtest_test"/>
 		</Unit>
 		<Unit filename="/home/margot/dz_2/for_dynamic_library/initial_struct_and_process.c">
 			<Option target="dynamic"/>
-			<Option target="gtest_test"/>
 		</Unit>
 		<Unit filename="/home/margot/dz_2/for_dynamic_library/multipl_app.c">
 			<Option target="dynamic"/>
@@ -296,7 +293,6 @@
 		</Unit>
 		<Unit filename="/home/margot/dz_2/for_static_library/create_and_count_d.c">
 			<Option target="static"/>
-			<Option target="gtest_test"/>
 		</Unit>
 		<Unit filename="/home/margot/dz_2/for_static_library/single_app.c">
 			<Option target="static"/>
@@ -308,20 +304,21 @@
 		<Unit filename="/home/margot/dz_2/tests/for_static.c">
 			<Option target="gtest_test"/>
 		</Unit>
+		<Unit filename="/home/margot/dz_2/tests/main.cpp">
+			<Option target="gtest_test"/>
+		</Unit>
 		<Unit filename="/home/margot/dz_2/tests/matrix_for_tests.c">
 			<Option target="gtest_test"/>
 		</Unit>
-		<Unit filename="/home/margot/dz_2/tests/test_main.c">
+		<Unit filename="/home/margot/dz_2/tests/test.cpp">
 			<Option target="gtest_test"/>
 		</Unit>
 		<Unit filename="/home/margot/dz_2/utils/free_f.c">
 			<Option target="dynamic"/>
-			<Option target="gtest_test"/>
 		</Unit>
 		<Unit filename="/home/margot/dz_2/utils/standart_matrix_func.c">
 			<Option target="static"/>
 			<Option target="dynamic"/>
-			<Option target="gtest_test"/>
 		</Unit>
 		<Unit filename="/home/margot/dz_2/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

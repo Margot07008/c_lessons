@@ -19,18 +19,12 @@ SET(SRC_FILES_DYNAMIC
         )
 
 SET(SRC_FILES_TESTS
-        tests/for_dynamic.c
         tests/for_static.c
+        tests/for_dynamic.c
         tests/matrix_for_tests.c
-        tests/test_main.c
 
-        utils/standart_matrix_func.c
-        utils/free_f.c
-
-        for_static_library/create_and_count_d.c
-        for_dynamic_library/creating_processes.c
-        for_dynamic_library/create_and_count_matrix.c
-        for_dynamic_library/initial_struct_and_process.c
+        tests/test.cpp
+        tests/main.cpp
         )
 
 find_package(Threads REQUIRED)

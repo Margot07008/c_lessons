@@ -57,22 +57,9 @@ include CMakeFiles/gtest_test.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/gtest_test.dir/flags.make
 
-CMakeFiles/gtest_test.dir/tests/for_dynamic.c.o: CMakeFiles/gtest_test.dir/flags.make
-CMakeFiles/gtest_test.dir/tests/for_dynamic.c.o: ../tests/for_dynamic.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/margot/dz_2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/gtest_test.dir/tests/for_dynamic.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/gtest_test.dir/tests/for_dynamic.c.o   -c /home/margot/dz_2/tests/for_dynamic.c
-
-CMakeFiles/gtest_test.dir/tests/for_dynamic.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/gtest_test.dir/tests/for_dynamic.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/margot/dz_2/tests/for_dynamic.c > CMakeFiles/gtest_test.dir/tests/for_dynamic.c.i
-
-CMakeFiles/gtest_test.dir/tests/for_dynamic.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/gtest_test.dir/tests/for_dynamic.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/margot/dz_2/tests/for_dynamic.c -o CMakeFiles/gtest_test.dir/tests/for_dynamic.c.s
-
 CMakeFiles/gtest_test.dir/tests/for_static.c.o: CMakeFiles/gtest_test.dir/flags.make
 CMakeFiles/gtest_test.dir/tests/for_static.c.o: ../tests/for_static.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/margot/dz_2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/gtest_test.dir/tests/for_static.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/margot/dz_2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/gtest_test.dir/tests/for_static.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/gtest_test.dir/tests/for_static.c.o   -c /home/margot/dz_2/tests/for_static.c
 
 CMakeFiles/gtest_test.dir/tests/for_static.c.i: cmake_force
@@ -82,6 +69,19 @@ CMakeFiles/gtest_test.dir/tests/for_static.c.i: cmake_force
 CMakeFiles/gtest_test.dir/tests/for_static.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/gtest_test.dir/tests/for_static.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/margot/dz_2/tests/for_static.c -o CMakeFiles/gtest_test.dir/tests/for_static.c.s
+
+CMakeFiles/gtest_test.dir/tests/for_dynamic.c.o: CMakeFiles/gtest_test.dir/flags.make
+CMakeFiles/gtest_test.dir/tests/for_dynamic.c.o: ../tests/for_dynamic.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/margot/dz_2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/gtest_test.dir/tests/for_dynamic.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/gtest_test.dir/tests/for_dynamic.c.o   -c /home/margot/dz_2/tests/for_dynamic.c
+
+CMakeFiles/gtest_test.dir/tests/for_dynamic.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/gtest_test.dir/tests/for_dynamic.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/margot/dz_2/tests/for_dynamic.c > CMakeFiles/gtest_test.dir/tests/for_dynamic.c.i
+
+CMakeFiles/gtest_test.dir/tests/for_dynamic.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/gtest_test.dir/tests/for_dynamic.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/margot/dz_2/tests/for_dynamic.c -o CMakeFiles/gtest_test.dir/tests/for_dynamic.c.s
 
 CMakeFiles/gtest_test.dir/tests/matrix_for_tests.c.o: CMakeFiles/gtest_test.dir/flags.make
 CMakeFiles/gtest_test.dir/tests/matrix_for_tests.c.o: ../tests/matrix_for_tests.c
@@ -96,128 +96,53 @@ CMakeFiles/gtest_test.dir/tests/matrix_for_tests.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/gtest_test.dir/tests/matrix_for_tests.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/margot/dz_2/tests/matrix_for_tests.c -o CMakeFiles/gtest_test.dir/tests/matrix_for_tests.c.s
 
-CMakeFiles/gtest_test.dir/tests/test_main.c.o: CMakeFiles/gtest_test.dir/flags.make
-CMakeFiles/gtest_test.dir/tests/test_main.c.o: ../tests/test_main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/margot/dz_2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/gtest_test.dir/tests/test_main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/gtest_test.dir/tests/test_main.c.o   -c /home/margot/dz_2/tests/test_main.c
+CMakeFiles/gtest_test.dir/tests/test.cpp.o: CMakeFiles/gtest_test.dir/flags.make
+CMakeFiles/gtest_test.dir/tests/test.cpp.o: ../tests/test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/margot/dz_2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/gtest_test.dir/tests/test.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gtest_test.dir/tests/test.cpp.o -c /home/margot/dz_2/tests/test.cpp
 
-CMakeFiles/gtest_test.dir/tests/test_main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/gtest_test.dir/tests/test_main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/margot/dz_2/tests/test_main.c > CMakeFiles/gtest_test.dir/tests/test_main.c.i
+CMakeFiles/gtest_test.dir/tests/test.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gtest_test.dir/tests/test.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/margot/dz_2/tests/test.cpp > CMakeFiles/gtest_test.dir/tests/test.cpp.i
 
-CMakeFiles/gtest_test.dir/tests/test_main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/gtest_test.dir/tests/test_main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/margot/dz_2/tests/test_main.c -o CMakeFiles/gtest_test.dir/tests/test_main.c.s
+CMakeFiles/gtest_test.dir/tests/test.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gtest_test.dir/tests/test.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/margot/dz_2/tests/test.cpp -o CMakeFiles/gtest_test.dir/tests/test.cpp.s
 
-CMakeFiles/gtest_test.dir/utils/standart_matrix_func.c.o: CMakeFiles/gtest_test.dir/flags.make
-CMakeFiles/gtest_test.dir/utils/standart_matrix_func.c.o: ../utils/standart_matrix_func.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/margot/dz_2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/gtest_test.dir/utils/standart_matrix_func.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/gtest_test.dir/utils/standart_matrix_func.c.o   -c /home/margot/dz_2/utils/standart_matrix_func.c
+CMakeFiles/gtest_test.dir/tests/main.cpp.o: CMakeFiles/gtest_test.dir/flags.make
+CMakeFiles/gtest_test.dir/tests/main.cpp.o: ../tests/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/margot/dz_2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/gtest_test.dir/tests/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gtest_test.dir/tests/main.cpp.o -c /home/margot/dz_2/tests/main.cpp
 
-CMakeFiles/gtest_test.dir/utils/standart_matrix_func.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/gtest_test.dir/utils/standart_matrix_func.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/margot/dz_2/utils/standart_matrix_func.c > CMakeFiles/gtest_test.dir/utils/standart_matrix_func.c.i
+CMakeFiles/gtest_test.dir/tests/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gtest_test.dir/tests/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/margot/dz_2/tests/main.cpp > CMakeFiles/gtest_test.dir/tests/main.cpp.i
 
-CMakeFiles/gtest_test.dir/utils/standart_matrix_func.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/gtest_test.dir/utils/standart_matrix_func.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/margot/dz_2/utils/standart_matrix_func.c -o CMakeFiles/gtest_test.dir/utils/standart_matrix_func.c.s
-
-CMakeFiles/gtest_test.dir/utils/free_f.c.o: CMakeFiles/gtest_test.dir/flags.make
-CMakeFiles/gtest_test.dir/utils/free_f.c.o: ../utils/free_f.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/margot/dz_2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/gtest_test.dir/utils/free_f.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/gtest_test.dir/utils/free_f.c.o   -c /home/margot/dz_2/utils/free_f.c
-
-CMakeFiles/gtest_test.dir/utils/free_f.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/gtest_test.dir/utils/free_f.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/margot/dz_2/utils/free_f.c > CMakeFiles/gtest_test.dir/utils/free_f.c.i
-
-CMakeFiles/gtest_test.dir/utils/free_f.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/gtest_test.dir/utils/free_f.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/margot/dz_2/utils/free_f.c -o CMakeFiles/gtest_test.dir/utils/free_f.c.s
-
-CMakeFiles/gtest_test.dir/for_static_library/create_and_count_d.c.o: CMakeFiles/gtest_test.dir/flags.make
-CMakeFiles/gtest_test.dir/for_static_library/create_and_count_d.c.o: ../for_static_library/create_and_count_d.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/margot/dz_2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/gtest_test.dir/for_static_library/create_and_count_d.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/gtest_test.dir/for_static_library/create_and_count_d.c.o   -c /home/margot/dz_2/for_static_library/create_and_count_d.c
-
-CMakeFiles/gtest_test.dir/for_static_library/create_and_count_d.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/gtest_test.dir/for_static_library/create_and_count_d.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/margot/dz_2/for_static_library/create_and_count_d.c > CMakeFiles/gtest_test.dir/for_static_library/create_and_count_d.c.i
-
-CMakeFiles/gtest_test.dir/for_static_library/create_and_count_d.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/gtest_test.dir/for_static_library/create_and_count_d.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/margot/dz_2/for_static_library/create_and_count_d.c -o CMakeFiles/gtest_test.dir/for_static_library/create_and_count_d.c.s
-
-CMakeFiles/gtest_test.dir/for_dynamic_library/creating_processes.c.o: CMakeFiles/gtest_test.dir/flags.make
-CMakeFiles/gtest_test.dir/for_dynamic_library/creating_processes.c.o: ../for_dynamic_library/creating_processes.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/margot/dz_2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/gtest_test.dir/for_dynamic_library/creating_processes.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/gtest_test.dir/for_dynamic_library/creating_processes.c.o   -c /home/margot/dz_2/for_dynamic_library/creating_processes.c
-
-CMakeFiles/gtest_test.dir/for_dynamic_library/creating_processes.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/gtest_test.dir/for_dynamic_library/creating_processes.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/margot/dz_2/for_dynamic_library/creating_processes.c > CMakeFiles/gtest_test.dir/for_dynamic_library/creating_processes.c.i
-
-CMakeFiles/gtest_test.dir/for_dynamic_library/creating_processes.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/gtest_test.dir/for_dynamic_library/creating_processes.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/margot/dz_2/for_dynamic_library/creating_processes.c -o CMakeFiles/gtest_test.dir/for_dynamic_library/creating_processes.c.s
-
-CMakeFiles/gtest_test.dir/for_dynamic_library/create_and_count_matrix.c.o: CMakeFiles/gtest_test.dir/flags.make
-CMakeFiles/gtest_test.dir/for_dynamic_library/create_and_count_matrix.c.o: ../for_dynamic_library/create_and_count_matrix.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/margot/dz_2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/gtest_test.dir/for_dynamic_library/create_and_count_matrix.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/gtest_test.dir/for_dynamic_library/create_and_count_matrix.c.o   -c /home/margot/dz_2/for_dynamic_library/create_and_count_matrix.c
-
-CMakeFiles/gtest_test.dir/for_dynamic_library/create_and_count_matrix.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/gtest_test.dir/for_dynamic_library/create_and_count_matrix.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/margot/dz_2/for_dynamic_library/create_and_count_matrix.c > CMakeFiles/gtest_test.dir/for_dynamic_library/create_and_count_matrix.c.i
-
-CMakeFiles/gtest_test.dir/for_dynamic_library/create_and_count_matrix.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/gtest_test.dir/for_dynamic_library/create_and_count_matrix.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/margot/dz_2/for_dynamic_library/create_and_count_matrix.c -o CMakeFiles/gtest_test.dir/for_dynamic_library/create_and_count_matrix.c.s
-
-CMakeFiles/gtest_test.dir/for_dynamic_library/initial_struct_and_process.c.o: CMakeFiles/gtest_test.dir/flags.make
-CMakeFiles/gtest_test.dir/for_dynamic_library/initial_struct_and_process.c.o: ../for_dynamic_library/initial_struct_and_process.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/margot/dz_2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/gtest_test.dir/for_dynamic_library/initial_struct_and_process.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/gtest_test.dir/for_dynamic_library/initial_struct_and_process.c.o   -c /home/margot/dz_2/for_dynamic_library/initial_struct_and_process.c
-
-CMakeFiles/gtest_test.dir/for_dynamic_library/initial_struct_and_process.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/gtest_test.dir/for_dynamic_library/initial_struct_and_process.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/margot/dz_2/for_dynamic_library/initial_struct_and_process.c > CMakeFiles/gtest_test.dir/for_dynamic_library/initial_struct_and_process.c.i
-
-CMakeFiles/gtest_test.dir/for_dynamic_library/initial_struct_and_process.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/gtest_test.dir/for_dynamic_library/initial_struct_and_process.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/margot/dz_2/for_dynamic_library/initial_struct_and_process.c -o CMakeFiles/gtest_test.dir/for_dynamic_library/initial_struct_and_process.c.s
+CMakeFiles/gtest_test.dir/tests/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gtest_test.dir/tests/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/margot/dz_2/tests/main.cpp -o CMakeFiles/gtest_test.dir/tests/main.cpp.s
 
 # Object files for target gtest_test
 gtest_test_OBJECTS = \
-"CMakeFiles/gtest_test.dir/tests/for_dynamic.c.o" \
 "CMakeFiles/gtest_test.dir/tests/for_static.c.o" \
+"CMakeFiles/gtest_test.dir/tests/for_dynamic.c.o" \
 "CMakeFiles/gtest_test.dir/tests/matrix_for_tests.c.o" \
-"CMakeFiles/gtest_test.dir/tests/test_main.c.o" \
-"CMakeFiles/gtest_test.dir/utils/standart_matrix_func.c.o" \
-"CMakeFiles/gtest_test.dir/utils/free_f.c.o" \
-"CMakeFiles/gtest_test.dir/for_static_library/create_and_count_d.c.o" \
-"CMakeFiles/gtest_test.dir/for_dynamic_library/creating_processes.c.o" \
-"CMakeFiles/gtest_test.dir/for_dynamic_library/create_and_count_matrix.c.o" \
-"CMakeFiles/gtest_test.dir/for_dynamic_library/initial_struct_and_process.c.o"
+"CMakeFiles/gtest_test.dir/tests/test.cpp.o" \
+"CMakeFiles/gtest_test.dir/tests/main.cpp.o"
 
 # External object files for target gtest_test
 gtest_test_EXTERNAL_OBJECTS =
 
-gtest_test: CMakeFiles/gtest_test.dir/tests/for_dynamic.c.o
 gtest_test: CMakeFiles/gtest_test.dir/tests/for_static.c.o
+gtest_test: CMakeFiles/gtest_test.dir/tests/for_dynamic.c.o
 gtest_test: CMakeFiles/gtest_test.dir/tests/matrix_for_tests.c.o
-gtest_test: CMakeFiles/gtest_test.dir/tests/test_main.c.o
-gtest_test: CMakeFiles/gtest_test.dir/utils/standart_matrix_func.c.o
-gtest_test: CMakeFiles/gtest_test.dir/utils/free_f.c.o
-gtest_test: CMakeFiles/gtest_test.dir/for_static_library/create_and_count_d.c.o
-gtest_test: CMakeFiles/gtest_test.dir/for_dynamic_library/creating_processes.c.o
-gtest_test: CMakeFiles/gtest_test.dir/for_dynamic_library/create_and_count_matrix.c.o
-gtest_test: CMakeFiles/gtest_test.dir/for_dynamic_library/initial_struct_and_process.c.o
+gtest_test: CMakeFiles/gtest_test.dir/tests/test.cpp.o
+gtest_test: CMakeFiles/gtest_test.dir/tests/main.cpp.o
 gtest_test: CMakeFiles/gtest_test.dir/build.make
 gtest_test: libdynamic.so
 gtest_test: libstatic.a
 gtest_test: CMakeFiles/gtest_test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/margot/dz_2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking C executable gtest_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/margot/dz_2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable gtest_test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gtest_test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

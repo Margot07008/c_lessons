@@ -37,6 +37,16 @@ void filling_matrix_for_test(int ***A, int N, int generetion)
             }
         }
     }
+    else if (generetion == 3)
+    {
+        int x = 1;
+        for(int i = 0; i < N; i++) {
+            for(int j = 0; j < N; j++) {
+                (*A)[i][j] = x;
+//			x += 1;
+            }
+        }
+    }
 }
 
 

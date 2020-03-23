@@ -57,7 +57,7 @@ void dynamic_array_print(int **A, int N)
 	}
 }
 
-int is_equal(int *arr, int* template, int size)
+int is_equal(int *arr, int *template, int size)
 {
 	for (int i = 0; i < 2*size - 1; i++) {
 		if (arr[i] != template[i])

@@ -47,3 +47,13 @@ int test_for_static()
 
 	return (1);
 }
+
+int *create_matrix_singl_test(int size, int **d_sum, int generation)
+{
+    int **matrix = dynamic_array_alloc(size);
+    filling_matrix_for_test(&matrix, size, generation);
+//	dynamic_array_print(matrix, size);
+    count_diagonal_sum_singl(matrix, size, &(*d_sum), 0);
+    dynamic_array_free(&matrix, size);
+    return (*d_sum);
+}

@@ -41,6 +41,6 @@ script:
   - cppcheck --enable=all --std=c99 --check-config --suppress=missingIncludeSystem -I ../includes/ ../for_static_library/
   - cppcheck --enable=all --std=c99 --check-config --suppress=missingIncludeSystem -I ../includes/ ../for_dynamic_library/
   - cppcheck --enable=all --std=c99 --check-config --suppress=missingIncludeSystem -I ../includes/ ../utils/
-  - valgrind --tool=memcheck --leak-check=full ./multi_thread 1000000
-  - valgrind --tool=memcheck --leak-check=full ./single_thread 1000000
+  - valgrind --tool=memcheck --leak-check=full ./multi_thread 10000
+  - valgrind --tool=memcheck --leak-check=full ./single_thread 10000
   - ./gtest_test

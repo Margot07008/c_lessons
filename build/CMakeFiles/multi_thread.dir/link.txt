@@ -1,1 +1,0 @@
-/usr/bin/cc    CMakeFiles/multi_thread.dir/for_dynamic_library/multipl_app.c.o  -o multi_thread -Wl,-rpath,/home/margot/dz_2/build libdynamic.so -lpthread 

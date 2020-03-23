@@ -1,7 +1,0 @@
-/home/margot/dz_2/build/CMakeFiles/rebuild_cache.dir
-/home/margot/dz_2/build/CMakeFiles/edit_cache.dir
-/home/margot/dz_2/build/CMakeFiles/static.dir
-/home/margot/dz_2/build/CMakeFiles/multi_thread.dir
-/home/margot/dz_2/build/CMakeFiles/dynamic.dir
-/home/margot/dz_2/build/CMakeFiles/single_thread.dir
-/home/margot/dz_2/build/CMakeFiles/gtest_test.dir

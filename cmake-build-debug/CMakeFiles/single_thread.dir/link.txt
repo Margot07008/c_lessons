@@ -1,1 +1,0 @@
-/usr/bin/cc -g   CMakeFiles/single_thread.dir/for_static_library/single_app.c.o  -o single_thread libstatic.a 
